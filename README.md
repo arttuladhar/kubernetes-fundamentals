@@ -4,8 +4,8 @@ Materiels for Kubernetes Fundamentals Workshop
 
 ## Pre-Requisites
 
-* Kubernetes Cluster
-* kubectl
+* Local Kubernetes Cluster
+* kubectl - https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ### Setup Kubernetes cluster using kind (Locally)
 
@@ -17,14 +17,20 @@ chmod +x ./kind
 mv ./kind /usr/local/kind
 ```
 
-### Create Kubernetes Cluster
+#### Create Kubernetes Cluster
 
 ```
 kind create cluster --name myfirst
 ```
 
-### Delete Cluster
+#### Delete Cluster
 
 ```
 kind delete cluster --name myfirst
+```
+
+### Get Kubernetes Cluster Info
+
+```
+kubectl cluster-info
 ```
