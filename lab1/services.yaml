@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+    name: my-first-service
+spec:
+    type: ClusterIP
+    selector:
+        app: first-nginx
+    ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
